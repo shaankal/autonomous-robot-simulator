@@ -37,6 +37,10 @@ class GridWorld:
             return position not in self.obstacles
         return False
 
+    def reset(self):
+        self.robot_position = (0, 0)
+        return self.robot_position
+
 
 # warehouse = GridWorld(8)
 #
